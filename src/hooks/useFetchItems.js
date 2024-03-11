@@ -69,7 +69,7 @@ export const useFetchItems = (page) => {
         }
 
         fetchData()
-    }, [page])
+    }, [page, API_URL])
 
     return { data, isLoading }
 }
