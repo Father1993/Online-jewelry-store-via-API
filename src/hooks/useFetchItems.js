@@ -4,14 +4,14 @@ import md5 from 'md5'
 
 export const useFetchItems = (page) => {
     // URL API храниться в файле .env
-    const API_URL = process.env.REACT_APP_API_URL
+    const API_URL = 'http://api.valantis.store:40000/'
     const [data, setData] = useState(null)
     // Состояние spinner
     const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         // Пароль для авторизации для API храниться в  .env
-        const password = process.env.REACT_APP_API_PASSWORD
+        const password = 'Valantis'
         // Формирую timestamp
         const timestamp = new Date()
             .toISOString()

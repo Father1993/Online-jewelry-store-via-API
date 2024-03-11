@@ -10,8 +10,8 @@ export const useFetchFilteredItems = (
 ) => {
     const [data, setData] = useState(null)
 
-    const API_URL = process.env.REACT_APP_API_URL
-    const password = process.env.REACT_APP_API_PASSWORD
+    const API_URL = 'http://api.valantis.store:40000/'
+    const password = 'Valantis'
     const timestamp = new Date().toISOString().slice(0, 10).replace(/-/g, '')
     const authString = md5(`${password}_${timestamp}`)
 
