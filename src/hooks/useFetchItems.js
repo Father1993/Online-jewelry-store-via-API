@@ -4,7 +4,7 @@ import md5 from 'md5'
 
 export const useFetchItems = (page) => {
     // URL API храниться в файле .env
-    const API_URL = 'http://api.valantis.store:40000/'
+    const API_URL = 'https://api.valantis.store:41000/'
     const [data, setData] = useState(null)
     // Состояние spinner
     const [isLoading, setIsLoading] = useState(false)
