@@ -1,0 +1,23 @@
+.scrollButton {
+    border: none;
+    background-color: transparent;
+    font-size: 5em;
+    color: gold;
+    position: fixed;
+    bottom: 20px;
+    right: 150px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.scrollButton.visible {
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .scrollButton {
+        font-size: 3em;
+        right: 30px;
+    }
+}

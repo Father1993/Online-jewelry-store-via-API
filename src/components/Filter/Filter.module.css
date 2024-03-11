@@ -1,0 +1,58 @@
+.filterFormWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filterFormWrapper label {
+    display: block;
+    max-width: 200px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.filterFormWrapper input {
+    width: 600px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: -200px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.filterFormWrapper button {
+    background-color: gold;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.filterFormWrapper button:hover {
+    background-color: goldenrod;
+}
+
+.filterFormWrapper .spinner {
+    animation: spinner 0.7s infinite linear;
+    margin-left: 10px;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 620px) {
+    .filterFormWrapper input {
+        width: 270px;
+        margin-left: -35px;
+    }
+}

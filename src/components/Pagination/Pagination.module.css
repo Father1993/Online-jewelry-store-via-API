@@ -1,0 +1,19 @@
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 208, 0, 0.7);
+}
